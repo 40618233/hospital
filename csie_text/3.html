@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Liver CT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Liver_CT.css">
+    <script type="text/javascript" src="Bookmark.js"></script>
+
+    <script>
+      function AddRC(){
+        var box=document.getElementById("box");
+        var div1=document.createElement("div");
+        box.appendChild(div1);
+        var span1=document.createElement("span");
+        div1.appendChild(span1);
+        div1.className='RC_DIV1';
+        span1.innerHTML='Renal Cyst';
+        span1.style='font-size: 20px;';
+        var div2=document.createElement("div");
+        var span2=document.createElement("span");
+        div1.appendChild(div2);
+        div2.appendChild(span2);
+        span2.innerHTML="Unremarkable"
+        span2.className='RC_TXT1'
+        div2.className='RC_DIV2';
+        var div3=document.createElement("div");
+        var span3=document.createElement("span");
+        div1.appendChild(div3);
+        div3.appendChild(span3);
+        span3.innerHTML="Remarkable"
+        span3.className='RC_TXT1'
+        div3.className='RC_DIV3';
+
+      }
+
+    </script>
+
+  </head>
+
+  <body>
+    <div calss="all">
+      <div class="top"></div>
+      <div class="under">
+        <!--頁籤-->
+        <div class="tabs">
+          <ul>
+            <li class="tab-open" id="tab1" onclick="showLayer(this,'lef1')">Findings</li>
+            <li class="tab-close" id="tab2" onclick="showLayer(this,'lef2')">Impression</li>
+            <li class="tab-close" id="tab3" onclick="showLayer(this,'lef3')">other</li>
+          </ul>
+        </div>
+        <!--主體-->
+        <div class="MB">
+          <!--Findings-->
+          <div class="lef" id="lef1" style="display: block;">
+            <li class="lef-tag">
+              <span class="lef-text">Normal findings</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Liver</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Liver vessels</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Biliary tract</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Gallbladder</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Ascites</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Lymph nodes</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">Others</span>
+            </li>
+          </div>
+          <!--Impression-->
+          <div class="lef" id="lef2" style="display: none">
+            <li class="lef-tag">
+              <span class="lef-text">1</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">2</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">3</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">4</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">5</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">6</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">7</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">8</span>
+            </li>
+          </div>
+          <!--other-->
+          <div class="lef" id="lef3" style="display: none">
+            <li class="lef-tag">
+              <span class="lef-text">9</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">10</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">11</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">12</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">13</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">14</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">15</span>
+            </li>
+            <li class="lef-tag">
+              <span class="lef-text">16</span>
+            </li>
+          </div>
+          <!---->
+          <div class="choose">
+            <div class="choose-top">填選子節點</div>
+            <div class="choose-bottom">
+              <div id="box"></div>
+            </div>
+          </div>
+          <div class="tag">
+            <div class="tag-title">Modules</div>
+            <div class="tag-body">
+              <div class="tag-body-sort" onclick="AddRC()">Renal Cyst</div>
+              <div class="tag-body-sort">Hydronephrosis</div>
+              <div class="tag-body-sort">Hiatal Hernia</div>
+            </div>
+            <div class="tag-body">
+              <div class="tag-body-sort">Spleen Size According Lugano</div>
+              <div class="tag-body-sort">Solitary Lung Nodule</div>
+              <div class="tag-body-sort">
+                <button style="width: 100px; height: 60px; line-height: 30px;">MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="choose-top" style="height: 5.5%;">顯示區</div>
+            <div class="choose-bottom" style="height: 94.5%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

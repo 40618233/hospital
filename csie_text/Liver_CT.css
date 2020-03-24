@@ -1,0 +1,186 @@
+
+        body{
+          margin: 0;
+        }
+    
+        .top{
+          height: 3.5vh;
+          background-color:#595959;
+        }
+    
+       .under{
+          height: 96.8vh;
+          background-color: #D4D4D4;
+        }
+    
+        .under .tabs{
+          width: 60vh;
+          height: 5.5vh;
+          position:absolute;
+          left: 3vh;
+          top: 6vh;
+        }
+    
+        .under .MB{
+    
+          width: 97%;
+          height: 85%;
+          position: absolute;
+          left: 3vh;
+          top: 11.4vh;
+        }
+    
+        .under .MB .lef{
+          float: left;
+          width: 25%;
+          height: 100%;
+          background-color: #737373;
+        }
+    
+        .under .MB .choose{
+          border: solid 1px #B5B5B5;
+          float: top;
+          position: absolute;
+          left: 25%;
+          width: 50%;
+          height: 70%;
+        }
+    
+        .under .MB .tag{
+    
+          position: absolute;
+          left: 25%;
+          width: 50%;
+          height: 30%;
+          bottom: 0;
+        }
+    
+        .under .MB .text{
+          border: solid 1px #B5B5B5;
+          float: right;
+          width: 25%;
+          height: 100%;
+        }
+    
+        .under .tabs .tab-close{
+          display: block;
+          float: left;
+          font-size: 35px;
+          margin: 9px;
+          border: solid 1px #B5B5B5;
+          border-radius: 10px 10px 0 0;
+          cursor: pointer;
+          background-color: white;
+          color: black;
+        }
+
+        .under .tabs .tab-open{
+            display: block;
+            float: left;
+            font-size: 35px;
+            margin: 9px;
+            border: solid 1px #B5B5B5;
+            border-radius: 10px 10px 0 0;
+            cursor: default;
+            background-color: #737373;
+            color: white;
+          }
+    
+        .tab-text{
+          font-size: 28px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+    
+        .lef-tag{
+          list-style-type: none;
+          height: 5vh;
+          border-bottom: #B5B5B5 solid 1px;
+        }
+    
+        .lef-text{
+          color:white;
+        }
+    
+        .tag-title{
+          border: 1px #B5B5B5 solid;
+          height: 24%;
+          background-color: #ABABAB;
+          text-align: center;
+          line-height: 50px;
+        }
+    
+        .tag-body{
+    
+          height: 38%;
+        }
+    
+        .tag-body-sort{
+          border: 1px #B5B5B5 solid;
+          width: 33.333%;
+          height: 100%;
+          float: left;
+          text-align: center;
+          line-height: 90px;
+        }
+        .choose-top{
+          width: 100%;
+          height: 8%;
+          background-color: #D4D4D4;
+        }
+    
+        .choose-bottom{
+          width: 100%;
+          height: 92%;
+          background-color: white;
+        }
+    
+        .tabs ul{
+          position: relative;
+          list-style-type: none;
+          margin: -10px;
+          padding: 0;
+        }
+
+        #box{
+            width: 100%;
+            height: 100%;
+        }
+
+        .RC_DIV1{
+            border-bottom: solid 1px;
+            width: 100%;
+            height: 15%;
+        }
+
+        .RC_DIV2{
+            border: solid 1px;
+            border-radius: 10px 0 0 10px;
+            border-right: none;
+            width: 10%;
+            height: 3.5%;
+            position: fixed;
+            left: 46%;
+        }
+
+        .RC_DIV3{
+            border: solid 1px;
+            border-radius: 0 10px 10px 0;
+            width: 10%;
+            height: 3.5%;
+            position: fixed;
+            left: 56%;
+        }
+
+        .RC_TXT1{
+            position: relative;
+            color: #B0B0B0;
+            left: 20%;
+            top: 10%;
+        }
+
+        .a{
+            font-size: 20px;
+            position: relative;
+            top: 10%;
+        }
